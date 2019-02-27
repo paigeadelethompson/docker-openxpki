@@ -14,11 +14,7 @@ function fixPermissions {
 }
 
 function checkDbVariables {
-  if [ -z "${APP_DB_NAME}" ]; then echo "Missing APP_DB_NAME, set this variable or link a mysql server with the name mysql."; exit 101; fi
-  if [ -z "${APP_DB_HOST}" ]; then echo "Missing APP_DB_HOST, set this variable or link a mysql server with the name mysql."; exit 102; fi
-  if [ -z "${APP_DB_PORT}" ]; then echo "Missing APP_DB_PORT, set this variable or link a mysql server with the name mysql."; exit 103; fi
-  if [ -z "${APP_DB_USER}" ]; then echo "Missing APP_DB_USER, set this variable or link a mysql server with the name mysql."; exit 104; fi
-  if [ -z "${APP_DB_PASS}" ]; then echo "Missing APP_DB_PASS, set this variable or link a mysql server with the name mysql."; exit 105; fi
+
 }
 
 function waitForDbConnection {
